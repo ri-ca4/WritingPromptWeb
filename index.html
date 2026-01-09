@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Writing Prompt Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="wrapper">
+
+            <div id="settings" class="display">
+                <form>
+                    <div class="input">
+                        <label for="genre">Genre</label>
+                        <select id="genre" name="genre">
+                            <option value="literary">Literary Fiction</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="scifi">Science Fiction</option>
+                            <option value="horror">Horror</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="romance">Romance</option>
+                            <option value="historical">Historical Fiction</option>
+                            <option value="contemporary">Contemporary</option>
+                            <option value="speculative">Speculative</option>
+                            <option value="random">Random</option>                  
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <label for="theme">Theme</label>
+                        <p>Separate themes with commas</p>
+                        <input id="theme" name="theme" type="text">
+                    </div>
+
+                    <div class="input">
+                        <label for="tone">Tone</label>
+                        <select id="tone" name="tone">
+                            <option value="hopeful">Hopeful</option>
+                            <option value="melancholic">Melancholic</option>
+                            <option value="dark">Dark</option>
+                            <option value="tender">Tender</option>
+                            <option value="eerie">Eerie</option>
+                            <option value="gritty">Gritty</option>
+                            <option value="whimsical">Whimsical</option>
+                            <option value="introspective">Introspective</option>
+                            <option value="urgent">Urgent</option>
+                            <option value="cynical">Cynical</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <label for="keywords">Keywords</label>
+                        <p>Separate keywords with commas</p>
+                        <input id="keywords" name="keywords" type="text">
+                    </div>
+
+                    <div class="input">
+                        <label for="intensity">Intensity</label>
+                        <input id="intensity" name="intensity" type="range" min="0" max="10" value="5">
+                    </div>
+
+                    <div class="input">
+                        <label for="forbid">Forbidden Elements</label>
+                        <p>Separate elements with commas</p>
+                        <input id="forbid" name="forbid" type="text">
+                    </div>
+
+                    <div class="input">
+                        <label for="scope">Lenght/Scope</label>
+                        <select id="scope" name="scope">
+                            <option value="flash">Flash Fiction</option>
+                            <option value="short">Short Story</option>
+                            <option value="chapter">Single Chapter</option>
+                            <option value="novel">Novel</option>
+                            <option value="open">Open-Ended</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div id="loading" class="display hide">
+                <p>loading</p>
+            </div>
+            <div id="results" class="display hide">
+                <div id="resultsDiv">
+                    [results go here]
+                </div>
+            </div>
+
+        </div>
+        <script src="js/script.js" async defer></script>
+    </body>
+</html>
