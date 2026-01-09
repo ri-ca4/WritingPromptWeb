@@ -19,7 +19,7 @@
         <div class="wrapper">
 
             <div id="settings" class="display">
-                <form>
+                <form id="form">
                     <div class="input">
                         <label for="genre">Genre</label>
                         <select id="genre" name="genre">
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="input">
-                        <label for="scope">Lenght/Scope</label>
+                        <label for="scope">Length/Scope</label>
                         <select id="scope" name="scope">
                             <option value="flash">Flash Fiction</option>
                             <option value="short">Short Story</option>
@@ -85,6 +85,8 @@
                             <option value="open">Open-Ended</option>
                         </select>
                     </div>
+
+                    <button id="submit">Generate Prompt</button>
                 </form>
             </div>
             <div id="loading" class="display hide">
